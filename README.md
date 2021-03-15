@@ -6,3 +6,11 @@
 4. Kopieer `.terraform` directory naar stick
 5. Airgap stuff
 
+:zap: Zorg bij het toevoegen van nieuwe providers dat je van 'groter of gelijk aan' version pinning (`~>`) gebruik maakt om nieuwe versies toe te staan.
+
+```
+rke = {
+  source  = "rancher/rke"
+  version = "~> 1.1.4"
+}
+```
